@@ -8,6 +8,8 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_display_message">My Message</string>
-    <string name="chat_text"></string>
+    <string name="chat_text">Chat Now!</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="desc">A Description</string>
 
 </resources>

@@ -5,12 +5,12 @@
     tools:context=".MainActivity"
     android:orientation="horizontal" >
     
-    <TextView
+    <Button
         android:id="@+id/text_box"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_below="@+id/edit_message"
+        android:onClick="chatNow"
         android:text="@string/chat_text" />
     
     <EditText
@@ -22,14 +22,24 @@
         android:layout_toLeftOf="@+id/send_button"
         android:hint="@string/edit_message" />
 
-     <Button
-         android:id="@id/send_button"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignBottom="@+id/edit_message"
-         android:layout_alignParentRight="true"
-         android:layout_alignParentTop="true"
-         android:onClick="sendMessage"
-         android:text="@string/button_send" />
+    <Button
+        android:id="@id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_message"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="sendMessage"
+        android:text="@string/button_send" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="chatNow"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/google" />
 
 </RelativeLayout >
